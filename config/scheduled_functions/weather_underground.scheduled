@@ -1,0 +1,5 @@
+[daily_weather]
+plugin = WeatherUndergroundPlugin
+cmd = scheduled_good_morning
+times = 09:00
+days_of_week = all 

@@ -1,0 +1,9 @@
+liquor_sales:
+  plugin: "LiquorSalePlugin"
+  command: "cmd_get_current_liquor_sales"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1: 
+        regex_string: "^liquor sales$"
+

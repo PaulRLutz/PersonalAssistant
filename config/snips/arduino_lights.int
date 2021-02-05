@@ -1,0 +1,3 @@
+lights [lightsState:lightsState](on)
+turn [lightsState:lightsState](off) the lights
+turn the lights [lightsState:lightsState](on)

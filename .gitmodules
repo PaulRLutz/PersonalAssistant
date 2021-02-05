@@ -1,0 +1,3 @@
+[submodule "helpers/text2num"]
+	path = helpers/text2num
+	url = https://github.com/ghewgill/text2num

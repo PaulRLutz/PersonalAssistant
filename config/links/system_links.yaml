@@ -1,0 +1,10 @@
+name:
+  plugin: "SystemPlugin"
+  command: "cmd_get_cpu_temp"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1: 
+        regex_string: "^what(?:'s| is) the processor temperature$"
+      - alt2: 
+        regex_string: "^processor temperature$"

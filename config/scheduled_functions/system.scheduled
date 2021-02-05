@@ -1,0 +1,5 @@
+[wifi_check]
+plugin = SystemPlugin
+cmd = scheduled_wifi_check
+times = all
+days_of_week = all 

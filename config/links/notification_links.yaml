@@ -1,0 +1,21 @@
+notify_user:
+  plugin: "NotificationPlugin"
+  command: "cmd_send_notification"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^notify (hello|hi|test)$"
+          arguments:
+            - arg1:
+              name: "notification_text"
+              type: "word"
+              regex_index: 0
+refresh_gmail_credentials:
+  plugin: "NotificationPlugin"
+  command: "cmd_refresh_gmail_credentials"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^refresh gmail credentials$"

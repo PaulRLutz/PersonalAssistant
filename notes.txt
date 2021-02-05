@@ -1,0 +1,4 @@
+regex:
+(.*?) - any word
+(.*?$) - any word at the end of a line
+

@@ -1,0 +1,27 @@
+chromecast_play_pause:
+  plugin: "ChromecastPlugin"
+  command: "cmd_chromecast_play_pause"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^chromecast (play|pause)$"
+          arguments:
+            - arg1:
+              name: "command"
+              type: "word"
+              regex_index: 0
+chromecast_seek:
+  plugin: "ChromecastPlugin"
+  command: "cmd_chromecast_seek"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^chromecast seek (.*?$)$"
+          arguments:
+            - arg1:
+              name: "seek_seconds"
+              type: "word"
+              regex_index: 0
+

@@ -1,0 +1,30 @@
+quit:
+  plugin: "default"
+  command: "cmd_quit"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1: 
+        regex_string: "^(quit|exit|bye|goodbye|good bye|see you|see ya|see you later|see ya later)$"
+status:
+  plugin: "default"
+  command: "cmd_status"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1: 
+        regex_string: "^(status)$"
+reload_plugin:
+  plugin: "default"
+  command: "cmd_reload_plugin"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^reload plugin (.*?$)$"
+          arguments:
+            - arg1:
+              name: "plugin_name"
+              type: "word"
+              regex_index: 0
+

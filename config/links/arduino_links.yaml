@@ -1,0 +1,311 @@
+tv_on:
+  plugin: "ArduinoPlugin"
+  command: "cmd_tv_on"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^(?:television|tv) on$"
+      - alt2:
+        regex_string: "^turn on the (?:television|tv)$"
+      - alt3:
+        regex_string: "^turn the (?:television|tv) on$"
+tv_off:
+  plugin: "ArduinoPlugin"
+  command: "cmd_tv_off"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^(?:television|tv) off$"
+      - alt2:
+        regex_string: "^turn off the (?:television|tv)$"
+      - alt3:
+        regex_string: "^turn the (?:television|tv) off$"
+tv_audio_up:
+  plugin: "ArduinoPlugin"
+  command: "cmd_tv_audio"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^(?:television|tv)(?: volume) (up|down|power|mute|unmute)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (up|down|power|mute|unmute) the (?:television|tv)(?: volume)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the (?:television|tv) (up|down|power|mute|unmute)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+computer_lights:
+  plugin: "ArduinoPlugin"
+  command: "cmd_computer_lights"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^computer lights (default|red|green|blue|off)$"
+          arguments:
+            - arg1:
+              name: "color"
+              type: "word"
+              regex_index: 0
+room_lights:
+  plugin: "ArduinoPlugin"
+  command: "cmd_room_lights"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^lights (on|off|up|down)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off|up|down) the lights$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the lights (on|off|up|down)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+chair_light:
+  plugin: "ArduinoPlugin"
+  command: "cmd_chair_light"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^chair light (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) the chair light$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the chair light (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+all_lights:
+  plugin: "ArduinoPlugin"
+  command: "cmd_all_lights"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^all lights (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) all the lights$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn all of lights (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+fan:
+  plugin: "ArduinoPlugin"
+  command: "cmd_fan"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^fan (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) the fan$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the fan (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+wireless:
+  plugin: "ArduinoPlugin"
+  command: "cmd_wireless"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^(?:wireless|wifi|wi fi| wi-fi|internet) (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) the (?:wireless|wifi|wi fi| wi-fi|internet)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the (?:wireless|wifi|wi fi| wi-fi|internet) (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt4:
+        regex_string: "^(restart) the (?:wireless|wifi|wi fi| wi-fi|internet)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt5:
+        regex_string: "^(restart) (?:wireless|wifi|wi fi| wi-fi|internet)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+
+stars:
+  plugin: "ArduinoPlugin"
+  command: "cmd_stars"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^stars (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) the stars$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the stars (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+stars:
+  plugin: "ArduinoPlugin"
+  command: "cmd_stars"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^stars (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) the stars$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the stars (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+orb:
+  plugin: "ArduinoPlugin"
+  command: "cmd_orb"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^orb (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt2:
+        regex_string: "^turn (on|off) the orb$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+      - alt3:
+        regex_string: "^turn the orb (on|off)$"
+        arguments:
+          - arg1:
+            name: "command"
+            type: "word"
+            regex_index: 0
+peace_out:
+  plugin: "ArduinoPlugin"
+  command: "cmd_peace_out"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^peace out$"
+wake_up:
+  plugin: "ArduinoPlugin"
+  command: "cmd_wake_up"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^wake up$"

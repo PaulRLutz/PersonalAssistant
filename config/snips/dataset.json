@@ -1,0 +1,82 @@
+{
+  "language": "en",
+  "intents": {
+    "arduino_lights": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "lights "
+            },
+            {
+              "slot_name": "lightsState",
+              "entity": "lightsState",
+              "text": "on"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "turn "
+            },
+            {
+              "slot_name": "lightsState",
+              "entity": "lightsState",
+              "text": "off"
+            },
+            {
+              "text": " the lights"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "turn the lights "
+            },
+            {
+              "slot_name": "lightsState",
+              "entity": "lightsState",
+              "text": "on"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "entities": {
+    "onOff": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "on",
+          "synonyms": []
+        },
+        {
+          "value": "off",
+          "synonyms": []
+        }
+      ]
+    },
+    "lightsState": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "on",
+          "synonyms": []
+        },
+        {
+          "value": "off",
+          "synonyms": []
+        },
+        {
+          "value": "on",
+          "synonyms": []
+        }
+      ]
+    }
+  }
+}

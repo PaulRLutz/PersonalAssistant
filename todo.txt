@@ -1,0 +1,51 @@
+Commands:
+how hot will it be today?
+synonyms
+define word
+wake me up at 7am
+what's the weather in PLACE DAY
+something about traffic
+set a timer for x minutes/seconds
+add to calendar
+chromecast volume?
+on load: warn about unmatched and/or unassigned cmds and links
+
+
+
+verify type and possible values for parsed args
+move contraction handling to script to prevent duplication in links files
+finish conversation sources on quit
+don't pass the whole assistant object to plugins/inputs/engines if at all possible
+let inputs determine conversation engine (modes?)
+CLI interaction engine
+add tests
+verbose error checking everywhere
+remove plugin from assistant.plugins if it wasn't started correctly
+move plugin configs from assistant to plugin parameter
+document and error check scheduled function thread
+enable/disable plugins in main config
+put arduino plugin commands instead of hardcoded
+remove fstrings to prevent malicious code execution
+don't allow input until the InteractionEngine has started
+
+continuous:
+define paramater types and values in function annotations
+doc strings and comments EVERYWHERE
+
+in progress:
+assistant remote
+http server input testing and error checking
+config file stuff should be in the plugin class
+weather plugin should be less messy. cmds and helper functions shouldn't be so entangled.
+
+done:
+enable/disable plugins in main config
+scheduled functions
+reload plugins
+notification system
+get_status/refresh_status for plugins
+linter for regex engine
+simplify conversation/dialogue creation syntax (used yaml)
+remove duplication b/w plugins and input loading
+race condition exists when a conversation engine finishes an interaction before an input receives the new_user_input result
+keep track of active plugins/inputs (aka which ones fail to load, etc)

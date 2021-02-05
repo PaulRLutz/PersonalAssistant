@@ -1,0 +1,56 @@
+sunset:
+  plugin: "WeatherUndergroundPlugin"
+  command: "cmd_get_sunset_time"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1: 
+          regex_string: "^what time(?:'s| is) sunset$"
+        - alt2:
+          regex_string: "^when(?:'s| is) sunset$"
+        - alt3:
+          regex_string: "^sunset$"
+        - alt4:
+          regex_string: "^when(?:'s| does) the sun (?:set|go down)$"
+        - alt5:
+          regex_string: "^when(?:'s| does) the sun go down$"
+weather:
+  plugin: "WeatherUndergroundPlugin"
+  command: "cmd_get_forecast"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^what(?:'s| is) the weather (?:like) (today|tomorrow|sunday|monday|tuesday|wednesday|thursday|friday|saturday)$"
+          arguments:
+            - arg1:
+              name: "day"
+              type: "word"
+              regex_index: 0
+        - alt2:
+          regex_string: "weather (today|tomorrow|sunday|monday|tuesday|wednesday|thursday|friday|saturday)$"
+          arguments:
+            - arg1:
+              name: "day"
+              type: "word"
+              regex_index: 0
+weather_default:
+  plugin: "WeatherUndergroundPlugin"
+  command: "cmd_get_forecast"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+        - alt1:
+          regex_string: "^weather$"
+        - alt2:
+          regex_string: "^what(?:'s| is) the weather$"
+        - alt3:
+          regex_string: "^what(?:'s| does) the weather look like$"
+        - alt4:
+          regex_string: "^how(?:'s| does) the weather look$"
+        - alt5:
+          regex_string: "^how(?:'s| is) the weather looking$"
+        - alt6:
+          regex_string: "^what(?:'s| is) it like (?:out|outside)$"
+        - alt7:
+          regex_string: "^what(?:'s| is) the weather$"

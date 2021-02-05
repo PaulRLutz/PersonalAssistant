@@ -1,0 +1,2 @@
+http curl example:
+curl --connect-timeout 600 -H "Content-Type: application/json" -X POST -d '{"post_type":"continue_conversation","user_input":"how are you", "conversation_id": "12fd312e-342d-4cad-acfa-73d94d48cba4"}' http://localhost:6666

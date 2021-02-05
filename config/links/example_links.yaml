@@ -1,0 +1,30 @@
+name:
+  plugin: "ExamplePlugin"
+  command: "cmd_name"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1: 
+        regex_string: "^what is your name$"
+hello:
+  plugin: "ExamplePlugin"
+  command: "cmd_hello"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1: 
+        regex_string: "^hello$"
+mood:
+  plugin: "ExamplePlugin"
+  command: "cmd_set_mood"
+  dialogue_pieces:
+    - piece0:
+      text_templates:
+      - alt1:
+        regex_string: "^set the mood to (happy|sad)$"
+        arguments:
+          - arg1:
+            name: "new_mood"
+            type: "word"
+            regex_index: 0
+
