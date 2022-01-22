@@ -54,10 +54,9 @@ class TerminalInput(Input):
 
   def get_input(self, prompt_text, interaction_id):
     self.log.debug(f"Waiting for user input (interaction_id={interaction_id})")
+    conversation_active = " "
     if self.interaction_id is not None:
       conversation_active = "@"
-    else:
-      conversation_active = " "
     new_user_input = input(f"{conversation_active}>>> ")
     self.log.debug(f"New user input: '{new_user_input}'")
     return new_user_input

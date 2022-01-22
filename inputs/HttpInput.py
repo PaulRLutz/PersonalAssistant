@@ -24,6 +24,7 @@ import os
 import json
 import uuid
 
+
 class HttpInput(Input):
   def __init__(self, log, assistant):
     self.log = log
@@ -47,7 +48,7 @@ class HttpInput(Input):
     self.http_server.assistant = self.assistant
     self.http_server.log = self.log
     
-    self.thread = Thread(target = self.http_server.serve_forever)
+    self.thread = Thread(target=self.http_server.serve_forever)
     self.thread.start()
 
   def stop(self):
